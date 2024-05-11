@@ -1,9 +1,9 @@
-import React from 'react';
 import AddContactForm from './addContactForm/addContactForm';
 import ContactList from './contactList/contactList';
 import Filter from './filter/filter';
 import { Provider } from 'react-redux';
 import store from '../store/store';
+
 const App = () => {
   return (
     <Provider store={store}>
