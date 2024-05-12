@@ -18,11 +18,12 @@ const ContactList = () => {
         name.toLowerCase().includes(filter.toLowerCase())
       )
     : contacts;
+
   return (
     <ul>
-      {filtered.map(({ name, number, id }) => (
+      {filtered.map(({ name, phone, id }) => (
         <li key={id}>
-          {name}: {number}
+          {name}: {phone}
           <button
             style={{ marginLeft: '20px' }}
             onClick={() => dispatch(deleteContact(id))}
